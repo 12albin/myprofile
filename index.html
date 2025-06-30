@@ -620,7 +620,11 @@
 						target="_blank">Disaster prediction using tweets</a>
 					<a class="project-cell" href="https://hatespeechdetector-9prqycsnaokws7tsnunc7h.streamlit.app/"
 						target="_blank">Hate Speech Detector</a>
-					<a class="project-cell" href="https://your-streamlit-url-3" target="_blank">Project 3</a>
+					<a class="project-cell" href="javascript:void(0);"
+						onclick="openImageModal('assets/powerbiImage/project1.png')">Instamart Dashboard using Power
+						BI</a>
+
+
 					<a class="project-cell" href="https://your-streamlit-url-4" target="_blank">Project 4</a>
 					<a class="project-cell" href="https://your-streamlit-url-5" target="_blank">Project 5</a>
 					<a class="project-cell" href="https://your-streamlit-url-6" target="_blank">Project 6</a>
@@ -819,6 +823,26 @@
 
 	<!--Custom JS-->
 	<script src="assets/js/custom.js"></script>
+
+	<!-- Reusable Image Modal -->
+	<div id="imageModal" class="modal"
+		style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+		<span onclick="document.getElementById('imageModal').style.display='none'"
+			style="position: absolute; top: 20px; right: 45px; color: white; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+		<img id="modalImage" src=""
+			style="margin: auto; display: block; max-width: 90%; max-height: 90%; margin-top: 5%;">
+	</div>
+	<script>
+		function openImageModal(imgSrc) {
+			var modal = document.getElementById('imageModal');
+			var modalImg = document.getElementById('modalImage');
+			modal.style.display = 'block';
+			modalImg.src = imgSrc;
+		}
+	</script>
+
+
+
 
 </body>
 
